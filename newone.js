@@ -25,7 +25,7 @@ app.get('/', function(req, res) {
       const collection = db.collection(dbname);
 
       // Find all documents in the collection
-      Model.getOne("htno", your_ticket_no).then(res => {
+      Model.getOne("htno", /* Here you should give any hall ticket no from your mongo db */).then(res => {
     console.log(res.json(())
 })
         if (!err) {
